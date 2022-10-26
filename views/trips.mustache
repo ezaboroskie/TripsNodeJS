@@ -1,0 +1,25 @@
+<html>
+    <head></head>
+
+    <body>
+        <h1>Your Trips</h1>
+            {{#allTrips}}
+            <li>{{desti}} : {{dateDepart}} - {{dateReturn}}</li>
+            {{/allTrips}}
+        <ul>
+
+            <form method = "POST" action= "/trips/add-trip">
+                <h2> Add a Trip </h2>
+                <input type="text" placeholder= "Enter a destination" name="tripDesti" />
+                <input type="text" placeholder= "Enter a departure date" name="tripDepart" />
+                <input type="text" placeholder= "Enter a return date" name= "tripReturn" />
+                <button>Add Trip</button>
+            </form>
+
+        </ul>
+
+    </body>
+</html>
+
+
+
